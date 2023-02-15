@@ -1,0 +1,40 @@
+@media screen and (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+
+  .header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .open-menu {
+    display: none;
+  }
+
+  .nav-list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 58px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+  .tablet-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-self: baseline;
+  }
+
+  .contact {
+    display: inline-block;
+    order: -1;
+  }
+}
