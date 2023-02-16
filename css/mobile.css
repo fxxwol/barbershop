@@ -1,7 +1,12 @@
 @media screen and (max-width: 767px) {
   .nav-list,
   .contact,
-  .booking-btn {
+  .booking-btn,
+  .about-img {
     display: none;
+  }
+
+  .logo {
+    fill: #ffff;
   }
 }

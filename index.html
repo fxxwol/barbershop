@@ -16,35 +16,175 @@
     <link rel="stylesheet" href="./css/mobile.css" />
     <link rel="stylesheet" href="./css/tablet.css" />
     <link rel="stylesheet" href="./css/desktop.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <div class="container header">
         <nav class="nav">
-          <a href="./index.html" class="link">
+          <a href="./index.html" class="link logo">
             <svg width="68" height="55">
               <use href="./img/icons.svg#icon-logo"></use>
             </svg>
           </a>
           <ul class="list nav-list">
-            <li><a href="" class="link">About</a></li>
-            <li><a href="" class="link">Services and prices</a></li>
-            <li><a href="" class="link">Barbers</a></li>
-            <li><a href="" class="link">Contacts</a></li>
+            <li><a href="" class="link nav-list-item">About</a></li>
+            <li>
+              <a href="" class="link nav-list-item">Services and prices</a>
+            </li>
+            <li><a href="" class="link nav-list-item">Barbers</a></li>
+            <li><a href="" class="link nav-list-item">Contacts</a></li>
           </ul>
         </nav>
-        <div class="tablet-wrap">
-            <address class="contact">
-              <a href="tel:+380441111111" class="link">+38 044 111 11 11</a>
-            </address>
-            <button type="button" class="btn booking-btn">online-booking</button>
-            <button type="buttton" class="btn open-menu">
-              <svg width="40" height="40">
-                <use href="./img/icons.svg#icon-mobile-menu"></use>
-              </svg>
-            </button>
-        </div >
+        <div class="contacts-wrap">
+          <address class="contact">
+            <a href="tel:+380441111111" class="link contact-link"
+              >+38 044 111 11 11</a
+            >
+          </address>
+          <button type="button" class="btn booking-btn light">
+            online-booking
+          </button>
+          <button type="button" class="btn open-menu">
+            <svg width="40" height="40">
+              <use href="./img/icons.svg#icon-mobile-menu"></use>
+            </svg>
+          </button>
+  
+        </div>
       </div>
     </header>
+    <main>
+      <section class="hero">
+        <div class="container hero-container">
+          <div class="hero-soc">
+            <ul class="hero-list list">
+              <li class="hero-item">
+                <a
+                  class="hero-link link"
+                  href
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Instagram</a
+                >
+              </li>
+              <li class="hero-item">
+                <a
+                  class="hero-link link"
+                  href
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="hero-wrap">
+            <p class="hero-suptitle suptitle">A hair salon for men in Kyiv</p>
+            <h1 class="hero-title">BarberShop</h1>
+            <p class="hero-subtitle">
+              We are experts in trendy men’s haircuts. We work quickly,
+              carefully and with style.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="about-section">
+        <div class="container about-container">
+          <div class="about-img">
+            <ul class="about-list list">
+              <li>
+                <picture>
+                  <source
+                    srcset="
+                      ./img/desktop/about1.jpg    1x,
+                      ./img/desktop/about1@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/tablet/about1.jpg    1x,
+                      ./img/tablet/about1@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="./img/tablet/about1.jpg"
+                    alt="haircut"
+                    class="about-pic"
+                  />
+                </picture>
+              </li>
+              <li>
+                <picture>
+                  <source
+                    srcset="
+                      ./img/desktop/about2.jpg    1x,
+                      ./img/desktop/about2@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/tablet/about2.jpg    1x,
+                      ./img/tablet/about2@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="./img/tablet/about2.jpg"
+                    alt="haircut"
+                    class="about-pic"
+                  />
+                </picture>
+              </li>
+            </ul>
+          </div>
+          <div class="about-wrap">
+            <p class="about-suptitle suptitle">About</p>
+            <h1 class="about-title title">Best Barbershop in your city</h1>
+            <p class="about-subtitle">
+              If you want to add more confidence to your image, you should visit
+              us
+            </p>
+            <p class="about-desc">
+              We are a team that never stops at what has been achieved and are
+              thirsty for changes. And when you fall into the hands of our
+              master, you will never be the same again. We are a team that is
+              always "on the same wave" with clients. Therefore, we are always
+              ready to improve everyone who comes to us!
+            </p>
+            <button type="button" class="btn dark">Online-booking</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="mobile-menu">
+            <button type="button" class="btn close-menu">
+              <svg width="40" height="40">
+                <use href="./img/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <ul class="list nav-list">
+              <li><a href="" class="link nav-list-item"></a></li>
+              <li><a href="" class="link nav-list-item"></a></li>
+              <li><a href="" class="link nav-list-item"></a></li>
+              <li><a href="" class="link nav-list-item"></a></li>
+            </ul>
+            <address class="contact">
+              <a href="tel:+380441111111" class="link contact-link"
+                >+38 044 111 11 11</a
+              >
+            </address>
+            <button type="button" class="btn booking-btn light">
+              online-booking
+            </button>
+          </div>
   </body>
 </html>

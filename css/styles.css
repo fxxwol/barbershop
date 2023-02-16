@@ -9,10 +9,18 @@ html {
 }
 
 :root {
+  --white-text-color: #ffffff;
+  --black-text-color: #303030;
+  --grey-text-color: #9da4bd;
+  --accent-color: #ff6c00;
+  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
-  background-color: violet;
+  font-family: "Open Sans", sans-serif;
+  color: var(--white-text-color);
+  letter-spacing: 0.1em;
+  /* background-color: #303030; */
   margin: 0;
 }
 
@@ -45,12 +53,43 @@ img {
 .btn {
   font-family: inherit;
   cursor: pointer;
-  border-radius: 4px;
   padding: 0;
-  border: 0;
   background-color: transparent;
-  line-height: 0;
+  width: 160px;
+  min-height: 40px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  transition: background-color 200ms ease-in;
 }
+
+.light {
+  color: var(--white-text-color);
+}
+
+.dark {
+  color: var(--black-text-color);
+}
+
+.btn:is(:hover, :focus) {
+  background-color: var(--accent-color);
+}
+
+.open-menu {
+  border: 0;
+  line-height: 0;
+  min-width: 0;
+}
+
+/* .close-menu {
+  border: 0;
+  line-height: 0;
+  min-width: 0;
+} */
 
 .container {
   width: 100%;
@@ -59,17 +98,173 @@ img {
   outline: 1px solid tomato;
 }
 
-.header{
-    position: relative;
+.header {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    padding-top: 40px;
-    padding-bottom: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.mobile-menu {
+  position: fixed;
+  width: 337px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: #ffffff;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.nav-list-item {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.38;
+  transition: color 250ms var(--cubic);
+}
+
+.nav-list-item:is(:hover, :focus) {
+  color: var(--accent-color);
+}
+
+.contact-link {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.38;
+  transition: color 250ms var(--cubic);
+}
+
+.contact-link:is(:hover, :focus) {
+  color: var(--accent-color);
+}
+
+/* --------------- HERO ----------------- */
+
+.hero-container {
+  display: flex;
+  padding: 0;
+  max-width: 100%;
+}
+
+.hero-wrap {
+  background-color: #626060;
+  background-image: linear-gradient(
+      rgba(25, 28, 23, 0.2),
+      rgba(25, 28, 23, 0.2)
+    ),
+    url(../img/mobile/hero-bg.jpg);
+  flex-grow: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 210px 30px;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-wrap {
+    background-image: linear-gradient(
+        rgba(25, 28, 23, 0.2),
+        rgba(25, 28, 23, 0.2)
+      ),
+      url(../img/mobile/hero-bg@2x.jpg);
   }
+}
 
+.hero-soc {
+  display: none;
+}
 
+.suptitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.suptitle::before {
+  content: "";
+  display: inline-block;
+  width: 60px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.hero-suptitle {
+  color: rgba(157, 164, 189, 0.6);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: "Raleway", sans-serif;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+}
+
+.hero-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: var(--white-text-color);
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.02em;
+  color: var(--grey-text-color);
+  max-width: 320px;
+}
+
+/* ------------ABOUT--------------- */
+
+.about-section {
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+
+.about-suptitle {
+  letter-spacing: 0.02em;
+  color: var(--black-text-color);
+}
+.about-title {
+  color: var(--black-text-color);
+}
+.about-subtitle {
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+.about-desc {
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: #555555;
+  margin-bottom: 20px;
+}
+
+.about-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
 @media screen and (min-width: 480px) {
   .container {
