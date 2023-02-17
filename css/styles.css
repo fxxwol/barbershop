@@ -437,7 +437,7 @@ img {
 }
 
 .benefits-item span:after {
- content: '+';
+  content: "+";
   position: absolute;
   top: 7px;
   font-weight: 600;
@@ -470,9 +470,109 @@ img {
   margin-bottom: 44px;
 }
 
+/* ------------------BARBERS--------------------- */
+
+.barbers {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: var(--other-bcg-color);
+}
+.barbers-sup {
+  color: var(--black-text-color);
+  margin-bottom: 20px;
+}
+.barbers-title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  color: var(--black-text-color);
+  margin-bottom: 44px;
+}
+.card-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+}
+.card {
+  width: 100%;
+  max-width: 418px;
+}
+.card-desc {
+  margin-top: 30px;
+  text-align: center;
+}
+.name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.38;
+  letter-spacing: 0.02em;
+  color: var(--black-text-color);
+  margin-bottom: 8px;
+}
+.position {
+  font-size: 14px;
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  margin-bottom: 30px;
+}
+.card-soc {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.card-soc-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--white-text-color);
+  border-radius: 50%;
+}
+
+.card-soc-link {
+  line-height: 0;
+  padding: 8px 10px;
+  transition: fill 250ms var(--cubic);
+}
+
+.card-soc-link:is(:hover, :focus) {
+  fill: var(--accent-color);
+}
+
+.soc-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.card-pic {
+  width: 418px;
+  height: 346px;
+}
+
 @media screen and (min-width: 480px) {
   .container {
     width: 448px;
     margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 448px) {
+  .benefits-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .benefits-item:nth-child(odd) {
+    margin-right: 0px;
+  }
+
+  .benefits-item:nth-child(even) {
+    margin-top: 0px;
   }
 }

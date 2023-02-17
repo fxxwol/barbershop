@@ -202,6 +202,22 @@
     width: 500px;
   }
 
+  /* ------------------BARBERS--------------------- */
+
+.barbers {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.card {
+  width: 450px;
+  max-width: unset;
+}
+.card-pic {
+  width: 450px;
+  height: 346px;
+}
+
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {

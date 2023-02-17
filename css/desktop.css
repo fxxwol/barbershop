@@ -148,6 +148,27 @@
     order: 1;
   }
 
+  /* ------------------BARBERS--------------------- */
+
+  .barbers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .card-list {
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+  }
+  .card {
+    width: 370px;
+    max-width: unset;
+  }
+
+  .card-pic {
+    width: 370px;
+    height: 346px;
+  }
+
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
