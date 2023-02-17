@@ -23,7 +23,7 @@
   }
 
   .nav-list {
-    flex-direction: row;
+    display: flex;
     align-items: center;
     gap: 20px;
   }
@@ -35,12 +35,15 @@
   }
 
   .nav-list-item {
+    color: var(--white-text-color);
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.1em;
   }
+  
 
   .contact-link {
+    color: var(--white-text-color);
     font-size: 12px;
     line-height: 16px;
   }

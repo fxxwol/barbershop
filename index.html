@@ -50,12 +50,11 @@
           <button type="button" class="btn booking-btn light">
             online-booking
           </button>
-          <button type="button" class="btn open-menu">
+          <button type="button" class="btn open-menu js-open-menu">
             <svg width="40" height="40">
               <use href="./img/icons.svg#icon-mobile-menu"></use>
             </svg>
           </button>
-  
         </div>
       </div>
     </header>
@@ -165,26 +164,33 @@
         </div>
       </section>
     </main>
-    <div class="mobile-menu">
-            <button type="button" class="btn close-menu">
-              <svg width="40" height="40">
-                <use href="./img/icons.svg#icon-close"></use>
-              </svg>
-            </button>
-            <ul class="list nav-list">
-              <li><a href="" class="link nav-list-item"></a></li>
-              <li><a href="" class="link nav-list-item"></a></li>
-              <li><a href="" class="link nav-list-item"></a></li>
-              <li><a href="" class="link nav-list-item"></a></li>
-            </ul>
-            <address class="contact">
-              <a href="tel:+380441111111" class="link contact-link"
-                >+38 044 111 11 11</a
-              >
-            </address>
-            <button type="button" class="btn booking-btn light">
-              online-booking
-            </button>
-          </div>
+    <div class="mobile-menu js-menu-container">
+      <div class="menu-container">
+        <button type="button" class="btn close-menu js-close-menu">
+          <svg width="40" height="40">
+            <use href="./img/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="list menu-navs">
+          <li><a href="" class="link nav-list-item">About</a></li>
+          <li><a href="" class="link nav-list-item">Services and prices</a></li>
+          <li><a href="" class="link nav-list-item">Barbers</a></li>
+          <li><a href="" class="link nav-list-item">Contacts</a></li>
+        </ul>
+        <address class="menu-contact">
+          <a href="tel:+380441111111" class="link contact-link"
+            >+38 044 111 11 11</a
+          >
+        </address>
+        <button type="button" class="btn dark menu-btn">online-booking</button>
+        <ul class="menu-soc list">
+          <li class="soc-item">
+            <a href="" class="link soc-link">Instagram</a>
+          </li>
+          <li class="soc-item"><a href="" class="link soc-link">Youtube</a></li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
