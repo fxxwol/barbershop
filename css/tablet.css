@@ -176,6 +176,32 @@
     line-height: 1.66;
   }
 
+  /* ---------------BENEFITS-------------- */
+
+  .benefits {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .benefits-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .benefits-list {
+    width: 450px;
+    align-self: flex-end;
+  }
+
+  .benefits-item {
+    width: 210px;
+    padding: 20px 44px;
+  }
+
+  .reasons-wrap{
+    width: 500px;
+  }
+
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {

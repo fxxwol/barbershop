@@ -14,6 +14,7 @@ html {
   --grey-text-color: #9da4bd;
   --accent-color: #ff6c00;
   --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+  --other-bcg-color: #f7f7f7;
 }
 
 body {
@@ -240,7 +241,7 @@ img {
       url(../img/mobile/hero-bg@2x.jpg);
   }
 
-  .prices-section{
+  .prices-section {
     background-image: url(../img/mobile/prices-bg@2x.png);
   }
 }
@@ -283,7 +284,6 @@ img {
 .hero-title {
   font-size: 42px;
   line-height: 1.17;
-  color: var(--white-text-color);
   margin-bottom: 20px;
 }
 
@@ -397,6 +397,77 @@ img {
 .prices-btn {
   display: block;
   margin: 0 auto;
+}
+
+/* ---------------BENEFITS-------------- */
+
+.benefits {
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+.benefits-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.benefits-item {
+  width: 193px;
+  height: 133px;
+  padding: 20px 36px;
+  text-align: center;
+  background-color: var(--other-bcg-color);
+}
+
+.benefits-item:nth-child(odd) {
+  margin-right: 30px;
+}
+
+.benefits-item:nth-child(even) {
+  margin-top: 30px;
+}
+
+.benefits-item span {
+  position: relative;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.35;
+  letter-spacing: 0.05em;
+  color: var(--black-text-color);
+}
+
+.benefits-item span:after {
+ content: '+';
+  position: absolute;
+  top: 7px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: calc(22 / 16);
+  color: var(--accent-color);
+}
+
+.benefits-item-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  color: var(--black-text-color);
+}
+.reason-sup {
+  color: var(--black-text-color);
+  margin-bottom: 20px;
+}
+.reason-title {
+  color: var(--black-text-color);
+  font-size: 42px;
+  line-height: 1.17;
+  margin-bottom: 20px;
+}
+.reson-desc {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #555555;
+  margin-bottom: 44px;
 }
 
 @media screen and (min-width: 480px) {
