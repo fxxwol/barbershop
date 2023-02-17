@@ -21,35 +21,25 @@
     align-items: center;
   }
 
-   .hero-wrap {
+  .hero-wrap {
     padding-bottom: 210px;
   }
 
-.hero-wrap {
+  .hero-wrap {
     background-image: linear-gradient(
         rgba(25, 28, 23, 0.2),
         rgba(25, 28, 23, 0.2)
-      ), url(../img/desktop/hero-bg.jpg);
-      padding: 270px 100px 210px;
-  }
-
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .hero-wrap {
-      background-image: linear-gradient(
-        rgba(25, 28, 23, 0.2),
-        rgba(25, 28, 23, 0.2)
-      ), url(../img/desktop/hero-bg@2x.jpg);
-    }
+      ),
+      url(../img/desktop/hero-bg.jpg);
+    padding: 270px 100px 210px;
   }
 
   .hero-title {
     font-size: 72px;
     line-height: 1.18;
   }
-/* ----------ABOUT-------------- */
-.about-section {
+  /* ----------ABOUT-------------- */
+  .about-section {
     padding-top: 120px;
     padding-bottom: 120px;
   }
@@ -88,12 +78,61 @@
     letter-spacing: 0.02em;
   }
 
-  .about-desc{
+  .about-desc {
     margin-bottom: 22px;
   }
 
-  .about-pic{
+  .about-pic {
     width: 270px;
     height: 445px;
+  }
+  /* -----------PRICES--------------- */
+
+  .prices-section {
+    max-width: 1600px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-image: url(../img/desktop/prices-bg.png);
+  }
+
+  .prices-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    background-image: none;
+  }
+
+  .prices-list {
+    width: 570px;
+    padding: 30px;
+  }
+
+  .prices-list:first-child {
+    background-image: linear-gradient(
+      rgba(23, 26, 36, 1),
+      rgba(23, 26, 36, 0.2)
+    );
+  }
+
+  .prices-list:last-child {
+    background-image: linear-gradient(rgba(9, 11, 19, 1), rgba(9, 11, 19, 0.2));
+  }
+  
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-wrap {
+      background-image: linear-gradient(
+          rgba(25, 28, 23, 0.2),
+          rgba(25, 28, 23, 0.2)
+        ),
+        url(../img/desktop/hero-bg@2x.jpg);
+    }
+
+    .prices-section {
+      background-image: url(../img/desktop/prices-bg@2x.png);
+    }
   }
 }

@@ -239,6 +239,10 @@ img {
       ),
       url(../img/mobile/hero-bg@2x.jpg);
   }
+
+  .prices-section{
+    background-image: url(../img/mobile/prices-bg@2x.png);
+  }
 }
 
 .hero-soc {
@@ -335,7 +339,7 @@ img {
   padding-top: 84px;
   padding-bottom: 84px;
   background-color: #111319;
-  background-image: url(../img/mobile/imgprices-bg.png);
+  background-image: url(../img/mobile/prices-bg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
