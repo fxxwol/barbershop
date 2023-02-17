@@ -249,6 +249,7 @@ img {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
   display: flex;
   align-items: center;
@@ -271,16 +272,13 @@ img {
 
 .title {
   font-family: "Raleway", sans-serif;
-  font-size: 42px;
-  line-height: 1.17;
+  font-weight: 700;
   letter-spacing: 0.05em;
 }
 
 .hero-title {
-  font-family: "Raleway", sans-serif;
   font-size: 42px;
   line-height: 1.17;
-  letter-spacing: 0.05em;
   color: var(--white-text-color);
   margin-bottom: 20px;
 }
@@ -305,6 +303,8 @@ img {
   color: var(--black-text-color);
 }
 .about-title {
+  font-size: 28px;
+  line-height: 1.17;
   color: var(--black-text-color);
 }
 .about-subtitle {
@@ -327,14 +327,77 @@ img {
   gap: 20px;
 }
 
+/* -----------PRICES--------------- */
+
+.prices-section {
+  max-width: 480px;
+  margin: 0 auto;
+  padding-top: 84px;
+  padding-bottom: 84px;
+  background-color: #111319;
+  background-image: url(../img/mobile/imgprices-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.prices-suptitle {
+  color: rgba(157, 164, 189, 0.6);
+  margin-bottom: 20px;
+}
+
+.prices-title {
+  font-size: 40px;
+  line-height: 1.17;
+}
+
+.prices-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 44px;
+  margin-bottom: 44px;
+  padding: 30px;
+  background-image: linear-gradient(rgba(23, 26, 36, 1), rgba(23, 26, 36, 0.2));
+}
+
+.prices-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.prices-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.prices-item:before {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background-color: rgba(157, 164, 189, 0.12);
+}
+
+.prices-item-text:first-child {
+  order: -1;
+}
+
+.prices-item-text {
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 0.02em;
+  color: var(--grey-text-color);
+}
+
+.prices-btn {
+  display: block;
+  margin: 0 auto;
+}
+
 @media screen and (min-width: 480px) {
   .container {
     width: 448px;
     margin: 0 auto;
   }
-
-  /* .menu-container {
-    width: 290px;
-    margin: 0 auto;
-  } */
 }
