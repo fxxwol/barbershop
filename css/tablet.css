@@ -304,6 +304,7 @@
 
   .footer-list {
     order: unset;
+    margin-bottom: 0;
   }
 
   @media (min-device-pixel-ratio: 2),
