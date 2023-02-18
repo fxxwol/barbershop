@@ -230,22 +230,6 @@ img {
   padding: 210px 30px;
 }
 
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero-wrap {
-    background-image: linear-gradient(
-        rgba(25, 28, 23, 0.2),
-        rgba(25, 28, 23, 0.2)
-      ),
-      url(../img/mobile/hero-bg@2x.jpg);
-  }
-
-  .prices-section {
-    background-image: url(../img/mobile/prices-bg@2x.png);
-  }
-}
-
 .hero-soc {
   display: none;
 }
@@ -473,6 +457,8 @@ img {
 /* ------------------BARBERS--------------------- */
 
 .barbers {
+  max-width: 480px;
+  margin: 0 auto;
   padding-top: 90px;
   padding-bottom: 90px;
   background-color: var(--other-bcg-color);
@@ -573,6 +559,216 @@ img {
 .barba-pic {
   width: 418px;
   height: 360px;
+}
+
+/* ------------ONLINE------------ */
+
+.online {
+  max-width: 480px;
+  margin: 0 auto;
+  padding-top: 84px;
+  padding-bottom: 84px;
+  background-color: #191c26;
+}
+
+.form-title {
+  font-size: 42px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.form-online {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 44px;
+  margin-top: 44px;
+}
+
+.online-item {
+  border: 0;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  transition: border-bottom-color 250ms var(--cubic);
+}
+
+.online-item::placeholder {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+  transition: color 250ms var(--cubic);
+}
+
+.online-item:focus-visible {
+  outline: 0;
+}
+
+.online-item:is(:hover, :focus) {
+  border-bottom-color: #ffffff;
+}
+
+.online-item:is(:hover, :focus)::placeholder {
+  color: var(--white-text-color);
+}
+
+.online-input {
+  width: 100%;
+}
+
+.comment {
+  width: 100%;
+  resize: none;
+  height: 76px;
+}
+
+/* ----------------------CONTACTS-----------------  */
+
+.contacts {
+  max-width: 480px;
+  margin: 0 auto;
+  padding-top: 84px;
+  padding-bottom: 84px;
+  background-color: #191c26;
+  background-image: url(../img/mobile/contacts-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.contacts-title {
+  font-size: 42px;
+  line-height: 1.16;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.address {
+  font-style: normal;
+  margin-bottom: 44px;
+}
+
+.address-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.address-item {
+  display: flex;
+  gap: 16px;
+}
+
+.address-link {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--grey-text-color);
+  transition: color 250ms var(--cubic);
+}
+
+.contact-icon {
+  stroke: #9da4bd;
+  order: -1;
+  transition: fill 250ms var(--cubic);
+}
+
+.address-link:is(:hover, :focus) {
+  color: var(--white-text-color);
+}
+
+.address-link:is(:hover, :focus) + .contact-icon {
+  stroke: #ffffff;
+}
+
+.working-sup {
+  color: var(--white-text-color);
+}
+
+.working-sup.suptitle::before {
+  color: rgba(157, 164, 189, 0.4);
+}
+
+.hours-desc {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--grey-text-color);
+  margin-top: 20px;
+}
+
+/* -------------- FOOTER----------------- */
+
+.footer {
+  padding-top: 51px;
+  padding-bottom: 44px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+.footer-copy {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #9da4bd;
+  order: 1;
+}
+
+.footer-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: flex-end;
+  order: -1;
+}
+
+.footer-list::before {
+  content: '';
+  width: 60px;
+  height: 1px;
+  background-color: #303030;
+}
+
+.footer-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #303030;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-wrap {
+    background-image: linear-gradient(
+        rgba(25, 28, 23, 0.2),
+        rgba(25, 28, 23, 0.2)
+      ),
+      url(../img/mobile/hero-bg@2x.jpg);
+  }
+
+  .prices-section {
+    background-image: url(../img/mobile/prices-bg@2x.png);
+  }
+
+  .contacts {
+    background-image: url(../img/mobile/contacts-bg@2x.png);
+  }
 }
 
 @media screen and (min-width: 480px) {

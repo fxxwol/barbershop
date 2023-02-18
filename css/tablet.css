@@ -44,7 +44,7 @@
   .contact-link {
     color: var(--white-text-color);
     font-size: 12px;
-    line-height: 16px;
+    line-height: 1.33;
   }
 
   .mobile-menu {
@@ -183,7 +183,7 @@
     padding-bottom: 100px;
   }
 
-  .benefits-container{
+  .benefits-container {
     display: flex;
     flex-direction: column;
   }
@@ -198,45 +198,115 @@
     padding: 20px 44px;
   }
 
-  .reasons-wrap{
+  .reasons-wrap {
     width: 500px;
   }
 
   /* ------------------BARBERS--------------------- */
 
-.barbers {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
+  .barbers {
+    max-width: 768px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 
-.card {
-  width: 450px;
-  max-width: unset;
-}
-.card-pic {
-  width: 450px;
-  height: 346px;
-}
+  .card {
+    width: 450px;
+    max-width: unset;
+  }
+  .card-pic {
+    width: 450px;
+    height: 346px;
+  }
 
-/* ---------------------BARBA------------------- */
+  /* ---------------------BARBA------------------- */
 
-.barba {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
+  .barba {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 
-.barba-sup {
-  margin-bottom: 44px;
-}
+  .barba-sup {
+    margin-bottom: 44px;
+  }
 
-.barbas {
-  flex-direction: row;
-  flex-wrap: wrap;
-}
+  .barbas {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
-.barba-pic {
-  width: 330px;
-}
+  .barba-pic {
+    width: 330px;
+  }
+
+  /* ------------ONLINE------------ */
+
+  .online {
+    max-width: 768px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .form-title {
+    text-align: left;
+  }
+
+  .form-online {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 44px;
+  }
+
+  .online-input {
+    width: 330px;
+  }
+
+  /* ----------------------CONTACTS-----------------  */
+  .contacts {
+    max-width: 768px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url(../img/tablet/contacts-bg.png);
+  }
+
+  .address-link {
+    width: 200px;
+  }
+
+  .contacts-title {
+    text-align: left;
+  }
+
+  .contacts-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .address-wrap {
+    width: 330px;
+  }
+
+  /* -------------- FOOTER----------------- */
+
+  .footer {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-copy {
+    order: unset;
+  }
+
+  .footer-list {
+    order: unset;
+  }
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -251,6 +321,10 @@
 
     .prices-section {
       background-image: url(../img/tablet/prices-bg@2x.png);
+    }
+
+    .contacts {
+      background-image: url(../img/tablet/contacts-bg@2x.png);
     }
   }
 }
