@@ -552,6 +552,29 @@ img {
   height: 346px;
 }
 
+/* ----------------BARBA---------------- */
+
+.barba {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.barba-sup {
+  color: var(--black-text-color);
+  margin-bottom: 71px;
+}
+
+.barbas {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.barba-pic {
+  width: 418px;
+  height: 360px;
+}
+
 @media screen and (min-width: 480px) {
   .container {
     width: 448px;
