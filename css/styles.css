@@ -100,7 +100,6 @@ img {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid tomato;
 }
 
 .header {
@@ -716,7 +715,6 @@ img {
 .footer-container {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
 }
 
 .footer-copy {
@@ -749,6 +747,11 @@ img {
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: #303030;
+  transition: color 250ms var(--cubic);
+}
+
+.footer-link:is(:hover, :focus){
+  color: var(--accent-color);
 }
 
 @media (min-device-pixel-ratio: 2),
